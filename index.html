@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Build It Forward</title>
+  <style>
+    :root{
+      --cream:#fef4e8;
+      --red:#b43f3f;
+      --blue:#2b3990;
+      --gray:#bfbfbf;
+      --text:#1f2937;
+      --max: 980px;
+      --radius: 14px;
+    }
+    html,body{margin:0;padding:0;background:var(--cream);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial}
+    header{
+      background:var(--cream);
+      border-bottom:1px solid rgba(0,0,0,.08);
+      padding:12px 24px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;top:0;z-index:10;
+    }
+    .brand{
+      font-weight:800;color:var(--red);font-size:1.2rem;
+    }
+    .logo{
+      height:100px;width:auto; /* increased logo size */
+    }
+    .wrap{width:min(100% - 2rem, var(--max));margin:0 auto;padding:2rem 0 3rem}
+    h1{font-size:2.5rem;color:var(--blue);text-align:center;margin:1rem 0 1.5rem;font-weight:900;letter-spacing:0.5px;}
+    p.lede{text-align:center;max-width:72ch;margin:0 auto 2rem;font-size:1.1rem}
+    section{margin:2.25rem 0}
+    h2{color:var(--blue);margin:0 0 .4rem;font-size:1.4rem;}
+    figure{margin:1.25rem auto;background:#fff;border:1px solid #e5e7eb;border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 15px rgba(0,0,0,.08);max-width:900px;}
+    figure img{display:block;width:100%;height:auto}
+    figcaption{padding:.9rem;color:#2b2b2b;font-size:1.05rem;text-align:center;font-style:italic;background:#fff;}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));justify-items:center}
+    .grid figure{max-width:100%;}
+    .grid figure img{height:280px;object-fit:cover}
+    .contact{text-align:center;margin-top:3rem;padding-top:1.25rem;border-top:2px solid var(--gray);color:#374151;}
+    .contact a{color:var(--red);font-weight:700;text-decoration:none}
+    .contact a:hover{text-decoration:underline}
+    footer{text-align:center;padding:15px;background-color:var(--gray);color:var(--blue);font-size:0.9rem;margin-top:30px;}
+    .section-text p{margin:.6rem 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Build it Forward</div>
+    <img src="logo.png" alt="Build It Forward Logo" class="logo"/>
+  </header>
+  <main class="wrap">
+    <h1>Build it Forward</h1>
+    <h1>Building Community, One Brick at a Time.</h1>
+    <p class="lede">
+      I have been a avid builder using LEGO bricks for as long as I could remember. They taught me patience,
+      resourcefulness, and gave me the ability to rebuild when something wasn’t working. If LEGOs had taught me all that
+      I knew they could teach others that too. I wanted kids—especially those who couldn’t afford LEGO sets—to have that too.
+      It was time to give to the world the magic that LEGOs had bestowed upon me.
+    </p>
+    <figure>
+      <img src="bif1.jpg" alt="Volunteers building new sets at an early Build It Forward event">
+      <figcaption>Volunteers building new sets in one of our first build events.</figcaption>
+    </figure>
+    <section class="section-text">
+      <h2>Starting Small</h2>
+      <p>
+        I started small. Posting flyers around town asking for donations, I focused on repurposing LEGO bricks that were
+        collecting dust in the attics of families that no longer had a use for them. To my surprise, the response was
+        overwhelming. Before long, my garage looked like a shipping warehouse, and I placed collection bins in public
+        spaces to streamline this process.
+      </p>
+    </section>
+    <section class="section-text">
+      <h2>Building Together</h2>
+      <p>
+        But something was missing—the interactivity and play that I love most about LEGO. I began hosting community events
+        at which kids built their own designs: a mad scientist’s lab, a supersonic airplane, even a kid’s pet cat. I’d
+        photograph each one, write step-by-step instructions, and repackage the disassembled LEGOs in a box. That way, the
+        next child didn’t get random bricks, but a full set born from another kid’s imagination.
+      </p>
+    </section>
+    <section class="section-text">
+      <h2>Looking Ahead</h2>
+      <p>
+        When I see scattered LEGO bricks across my room and feel the familiar studs pressed against my fingertips, my mind
+        is at home. Even the smallest pieces can create something extraordinary—LEGOs have taught me that. And though my own
+        foundation is still growing, brick-by-brick, I will carry that same patience and persistence into the larger
+        communities I hope to build in the years ahead.
+      </p>
+    </section>
+    <section>
+      <div class="grid">
+        <figure>
+          <img src="bif2.jpg" alt="Volunteers cleaning donated bricks">
+          <figcaption>Cleaning donated bricks.</figcaption>
+        </figure>
+        <figure>
+          <img src="bif3.jpg" alt="Large community build event">
+          <figcaption>Large community build it event.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="contact">
+      <p>Interested in learning more about Build It Forward or getting involved?<br>
+      Reach out to us anytime at <a href="mailto:mt49932820@gmail.com">mt49932820@gmail.com</a></p>
+    </div>
+  </main>
+  <footer>
+    © 2025 Michael Thomas — Build it Forward
+  </footer>
+</body>
+</html>
